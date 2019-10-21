@@ -55,7 +55,7 @@ $(document).ready(function () {
                 });
                 initializeGMap(currentLat, currentLng);
 
-                callPostAPI(getSearchedCS, function (listAllSearchedCS) {
+                callPostAPI(getSearchedCS, function (listAllSearchedCS) { // used for make ajax call for post data to api
                     if (listAllSearchedCS.length > 0) {
                         mapData = [];
                         mapData = listAllSearchedCS;
@@ -87,7 +87,7 @@ $(document).ready(function () {
             });
             initializeGMap(currentLat, currentLng);
 
-            callGetAPI(payloadData, function (chargingStation) {
+            callGetAPI(payloadData, function (chargingStation) { // used for make ajax call for get data from api
                 mapData = [];
                 mapData = chargingStation;
 
