@@ -50,7 +50,7 @@ $(document).ready(function () {
                 };
 
                 plugin.google.maps.environment.setEnv({
-                    'API_KEY_FOR_BROWSER_RELEASE': config.GOOGLE_MAP_API_KEY,
+                    'API_KEY_FOR_BROWSER_RELEASE': config.GOOGLE_MAP_API_KEY, // google map api key for browser inside config.js file
                     'API_KEY_FOR_BROWSER_DEBUG': config.GOOGLE_MAP_API_KEY
                 });
                 initializeGMap(currentLat, currentLng);
